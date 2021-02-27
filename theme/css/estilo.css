@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+html, .body {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+a {line-height: 200%;}
+a, button {transition: all 0.75s linear;}
+/*Seletores*/
+::-webkit-selection {
+	background: #222;
+	color: #e58526;
+}
+::-moz-selection {
+	background: #222;
+	color: #e58526;
+}
+::selection {
+	background: #222;
+	color: #e58526;
+}
+.btn{
+	border-color: #fff;
+	color: #fff;
+	display: block;
+	font-family: "Comfortaa", "Arial", sans-serif;
+}
+.btn:hover{
+	background: #fff;
+	color: #111;
+}
+/*Header*/
+.header {
+	margin-bottom: -85px;
+	position: relative;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+}
+
+.logo {
+	color: #FFF;
+	font-family: "Comfortaa", "Arial", sans-serif;
+	font-size: 37px;
+	font-weight: bold;
+}
+.logo span{
+	font-weight: light;
+}
+/*Menu*/
+.listMenu{
+	margin: 15px auto auto;
+	text-align: right;
+}
+
+.touchMenu_item{
+	color: #FFF;
+	font-family: "Comfortaa", "Arial", sans-serif;	
+}
+.touchMenu_item:hover{
+	color: yellow;
+	text-decoration: none;
+}
+.headerBanner {
+	background-image: url(../img/bgHeader_mobile640px.jpg);
+	background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.headerBanner .title{
+	font-size: 25px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.headerBanner .subtitle{
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+.headerBanner_iconTool{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.labelTool{
+	color: #FFF;
+	font-family: "Comfortaa", "Arial", sans-serif;
+}
+
+/*Conteudo home*/
+/*Titulo*/
+.title,.subtitle,.subtitle_desc {
+	color: #FFF;
+	font-family: "Comfortaa", "Arial", sans-serif;
+}
+.title{
+	font-size: 36px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+p {
+	color: #FFF;
+	font-family: "Comfortaa", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+/*Portifolio*/
+.homePortifolio{
+	background-image: url(../img/bgPortifolio_mobile640px.jpg);
+	background-size: cover;
+}
+.homePortifolio-box{
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+	width: 100%;
+}
+.homePortifolio-box:hover,
+.homePortifolio-box:focus{
+	scale: 0.95;
+	text-decoration: none;
+}
+.homePortifolio-box_desc{
+	color: #111;
+	font-family: "Comfortaa", "Arial", sans-serif;
+}
+/*Sobre nos*/
+.homeSobre, .homeProjetos{
+	background-size: cover;
+}
+.homeSobre{
+	background-image: url(../img/bgHomeSobre_mobile640px.jpg);
+}
+.homeProjetos{
+	background-image: url(../img/bgHomeProjeto_mobile640px.jpg);
+}
+.contentSobre{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.home-local_img{
+	box-shadow: 0px 0px 2px 0px rgba(229, 133, 38,0.5);
+}
+/*Criacao 2D e 3D*/
+.homeSobre-img{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+.contentProjetos .btn{
+	margin: 50px auto;
+	width: 220px;
+}
+/*Footer*/
+.footer {
+	background-color: #222;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	color: #121212;
+	text-align: center;
+	position: relative;
+}
+
+/*Links footer*/
+.footer_link {
+	border-bottom: 1px solid transparent;
+	color: #121212;
+	font-size: 15px;
+	font-weight: normal;
+}
+.footer_link:hover, .footer_link:focus, .footer_link:active {
+	border-bottom-color: #e58526;
+	color: #e58526;
+	text-decoration: none;
+}
+.footer_link-topo{
+	border-bottom: 1px solid transparent;
+	color: #121212;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: -40px;
+}
+.footer_link-topo:hover, .footer_link-topo:focus, .footer_link-topo:active {
+	border-bottom-color: #e58526;
+	color: #e58526;
+	text-decoration: none;
+}
+
+/*Copyright*/
+.copy {
+	background: #111;
+	font-family: "Comfortaa", "Arial", sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+.copy p{
+	font-size: 15px;
+	margin-bottom: 0;
+}
+.copy_link {
+	border-bottom: 1px solid transparent;
+	color: #fff;
+	font-size: 15px;
+}
+.copy_link:hover, .copy_link:focus, .copy_link:active {
+	border-bottom-color: #444;
+	color: #444;
+	text-decoration: none;
+}
+@media (min-width: 1024px) {
+	.logo {font-size: 42px;}
+	.listMenu{
+		margin: 25px auto;
+	}
+	.listMenu li{
+		display: inline;
+	}
+	.listMenu li:not(:last-child) .touchMenu_item{margin: auto 15px;}
+	
+    .headerBanner {
+		background-image: url(../img/bgHeader_full.jpg);
+	}
+	.headerBanner .title{
+		font-size: 80px;
+		margin-bottom: 35px;
+		margin-top: 35px;
+	}
+	.headerBanner .subtitle{
+		font-size: 40px;
+		margin-bottom: 50px;
+	}
+	.headerBanner p{margin-bottom: 20px;}
+	.headerBanner_iconTool{margin-top: 70px;}
+	p{
+		font-size: 17px;
+	}
+	.homeSobre-img{margin: 25px;}
+	.homePortifolio{
+		background-image: url(../img/bgPortifolio_full.png);
+	}
+	.homeSobre{
+		background-image: url(../img/bgHomeSobre_full.jpg);
+	}
+	.homeProjetos{
+		background-image: url(../img/bgHomeProjeto_full.jpg);
+	}
+}
+/*Pagina interna*/
+
+.content-TopBoxImg{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.pagProjeto{
+	background-color: rgb(155, 154, 139);
+}
+.bgBlack{
+	background-color: #111;
+}
+.pagProjeto-visaoBox{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.pagProjeto-visaoBox p{
+	font-size: 16px;
+}
+.content-boxImg{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.proj-boxTxt{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.subtitle_desc{
+	font-size: 15px;
+}
+@media (min-width: 1024px) {
+	.content-TopBoxImg{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.content-TopBoxImg:nth-child(2) img{
+		scale: 1.1;
+	}
+	.content-boxImg{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+}
